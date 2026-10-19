@@ -1,0 +1,681 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background-color: #4216a0;
+}
+
+.image{
+    width: 40px;
+}
+
+.logo-text{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.logo-text h2{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 3px;
+}
+
+.head-menus .main-menus a{
+    font-size: 13px;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.head-menus ul{
+    list-style-type: none;
+    /* padding: 10px; */
+}
+
+.head-menus ul a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 10px;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+.main-menus{
+
+    display: flex;
+    position: relative;
+
+}
+
+.head-menus .contact-us{
+    background-color: #d851dc;
+    color: white;
+    border-radius:3px;
+}
+
+.head-menus .contact-us:hover{
+    background-color: #d33b78;
+    transition: all 0.8s ease-in-out;
+}
+
+.head-menus .main-menus .Sub-menus{
+    position: absolute;
+    top: 29px;
+    left: 100px;
+    display: none;
+
+}
+
+.sub-menu{
+    display: none;
+}
+
+header .head-menus ul{
+    position: relative;
+}
+
+header .head-menus ul .sub-menu{
+    position: absolute; 
+    color: #000;
+    top:60px;
+    left: 110px;
+}
+
+header .head-menus ul .sub-menu li{
+    padding: 7px;
+    background-color: #3b1a83;
+    width: 150px;
+}
+
+.head-menus .main-menus .show-menu{
+    padding: 11px;
+}
+
+.head-menus .main-menus .show-menu:hover .sub-menu{
+    display: block;
+}
+
+
+/* .home-page{
+    background-image: url(Assets/mbr-1464x1080.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    /* position: relative; */
+    /* z-index: -1; */
+
+.home-page{
+    background-image: url(assets/background1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 700px;
+}
+
+.home-page .home-contant{
+    padding: 190px;
+}
+
+.home-page .home-contant h1{
+    font-size: 75px;
+}
+
+.home-page .home-btn{
+    padding: 63px;
+}
+
+.home-page .home-btn button{
+    padding: 16px 30px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(47, 214, 175);
+    font-size: 12px;
+    font-weight:bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.home-page .home-btn .btn2{
+    background-color: white;
+    color: black;
+}
+
+.home-page .home-btn .btn2:hover{
+    background-color: rgb(207, 205, 205);
+    color: black;
+}
+
+.home-page  .home-btn .btn1:hover{
+    background-color: #658a49;
+    transition: all 0.9s ease-in-out;
+}
+
+.bigimage{
+    background-image: url(assets/bg2-1-1920x600.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.head{
+    padding: 60px;
+}
+
+.head h2{
+    text-align: center; 
+    font-size: 50px;
+}
+
+.third-section{
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+.first-one, .second-one, .third-one{
+    width: 340px;
+    height: 850px;
+    background-color: #f6f4f4;
+    /* box-shadow: 0px 0px 3px 2px rgb(39, 36, 31); */
+    border-radius: 8px;
+}
+
+.first-one:hover, .second-one:hover, .third-one:hover{
+    box-shadow: 1px 2px 3px 2px rgb(207, 199, 184);
+    transition: all 0.7s ease-in-out;
+}
+
+.first-one .first-image{
+  height: 650px;
+  background-image: url(assets/picone.jpg);
+  background-color: wheat;
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.second-one .second-image{
+  height: 650px;
+  background-image: url(assets/pictwo.jpg);
+  background-color: wheat;
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.third-one .third-image{
+  height: 650px;
+  background-image: url(assets/picthree.jpg);
+  background-color: wheat;
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.first-content, .second-content, .third-content{
+    text-align: center;
+    font-size: 23px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.one-btn, .two-btn, .three-btn{
+    margin: 30px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 4px;
+    background-color:#2a125f;
+    color: white;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.one-btn:hover, .two-btn:hover, .three-btn:hover{
+    background-color: #000;
+    transition: all 0.7s ease-in-out;
+}
+
+.fourth-head{
+    background-color: #efeded;
+    padding: 80px;
+
+}
+
+.fourth-head h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.fourth-section{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.fst-one, .sec-one, .th-one{
+    width: 350px;
+    height: 450px;
+    background-color: #fbf8f8;
+    border-radius: 8px;
+}
+
+.fst-one:hover, .sec-one:hover, .th-one:hover{
+    box-shadow: 1px 2px 3px 2px rgb(207, 199, 184);
+    transition: all 0.7s ease-in-out;
+}
+
+.fst-one .fst-image{
+  height: 250px;
+  background-image: url(assets/four-one.png);
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.sec-one .sec-image{
+  height: 250px;
+  background-image: url(assets/four-two.png);
+  background-color: wheat;
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.th-one .th-image{
+  height: 250px;
+  background-image: url(assets/four-three.png);
+  background-color: wheat;
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.fst-content, .sec-content, .th-content{
+    text-align: center;
+    font-size: 23px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.fourth-btn{
+    margin: 30px;
+    padding: 10px;
+    width: 110px;
+    border-radius: 4px; 
+    background-color:#5ccebe;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.fourth-btn:hover{
+    background-color: #7cb674;
+    transition: all 0.8s ease-in-out;
+}
+
+.fst-one .four-image{
+  height: 250px;
+  background-image: url(assets/four-four.jpg);
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.sec-one .five-image{
+  height: 250px;
+  background-image: url(assets/four-five.png);
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.th-one .six-image{
+  height: 250px;
+  background-image: url(assets/four-six.png);
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.five-section{
+    display: flex;
+    padding: 20px;
+    gap: 70px;
+    /* justify-content: space-evenly; */
+    justify-content:center;
+
+}
+
+.fst-one .six-image{
+  height: 250px;
+  background-image: url(assets/four-seven);
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.sec-one .seven-image{
+  height: 250px;
+  background-image: url(assets/four-eight.png);
+  background-size: cover;   
+  background-repeat: none;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.fifth-head {
+    padding: 80px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.fifth-head h2 {
+    font-size: 50px;
+}
+
+.main iframe {
+    width: 580px;
+    height: 320px;
+    border-radius: 30px;
+}
+
+.startup button {
+    width: 150px;
+    height: 50px;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgb(22, 17, 17);
+    background-color: rgb(241, 237, 229);
+    border: none;
+}
+
+.startup .btn-one {
+    background-color: rgb(95, 208, 164);
+}
+
+.startup .btn-one:hover {
+    background-color: rgb(78, 174, 137);
+    box-shadow: 1px 1px 1px 0px rgb(191, 224, 141);
+    transition: all 0.6s ease-in-out;
+}
+
+.startup .btn-two:hover {
+    background-color: rgba(143, 147, 146, 0.469);
+    box-shadow: 1px 1px 1px 0px rgb(191, 224, 141);
+    transition: all 0.6s ease-in-out;
+}
+
+.footer {
+    /* background-color: #5c94ee; */
+    background: linear-gradient(to right, #164087, #437fdf);
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    font-size: 20px;
+}
+
+.footer span {
+    color: yellow;
+}
+
+.mobile-toggle i{
+    color: white;
+    display: none;
+}
+
+/* mobile response */
+
+/* own */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 10px 15px;
+    }
+
+    .image {
+        width: 30px;
+    }
+
+    .logo-text h2 {
+        font-size: 17px;
+    }
+
+    .mobile-toggle i {
+        display: block;
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .mobile-toggle i:hover{
+        
+    }
+
+    .main-menus {
+        display: none;
+    }
+
+    .home-page {
+        height: 450px;
+        background-position: center;
+    }
+
+    .home-page .home-contant {
+        padding: 100px 10px;
+    }
+
+    .home-page .home-contant h1 {
+        font-size: 35px;
+    }
+
+    .home-page .home-btn {
+        padding: 25px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .home-page .home-btn button {
+        padding: 13px 20px;
+    }
+
+    .bigimage {
+        height: 180px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .head {
+        padding: 30px 15px;
+    }
+
+    .head h2,
+    .fourth-head h2 {
+        font-size: 28px;
+    }
+
+    .third-section {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .first-one,
+    .second-one,
+    .third-one {
+        width: 100%;
+        max-width: 340px;
+        height: 550px;
+    }
+
+    .first-one .first-image,
+    .second-one .second-image,
+    .third-one .third-image {
+        height: 350px;
+    }
+
+    .first-content,
+    .second-content,
+    .third-content {
+        font-size: 17px;
+    }
+
+    .fourth-head {
+        padding: 35px 15px;
+    }
+
+    .fourth-section,
+    .five-section {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .fst-one,
+    .sec-one,
+    .th-one {
+        width: 280px;
+        height: 380px;
+        padding-bottom: 15px;
+    }
+
+    .fst-one .fst-image,
+    .sec-one .sec-image,
+    .th-one .th-image,
+    .fst-one .four-image,
+    .sec-one .five-image,
+    .th-one .six-image,
+    .fst-one .six-image,
+    .sec-one .seven-image {
+        height: 220px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .fst-content,
+    .sec-content,
+    .th-content {
+        font-size: 17px;
+    }
+
+    .fourth-btn {
+        margin: 15px;
+    }
+
+    .fifth-head {
+        padding: 35px 15px;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .startup {
+        text-align: center;
+    }
+
+    .fifth-head h2 {
+        font-size: 28px;
+    }
+
+    .startup button {
+        width: 130px;
+        margin: 5px 2px;
+    }
+
+    .main iframe {
+        width: 300px;
+        height: 150px;
+        border-radius: 12px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 25px 10px;
+        font-size: 14px;
+    }
+    
+
+}
+
+/* @media(min-width:320px) and (max-width:480px){
+
+.main-menus{
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #060a12;
+    width: 320px;
+    height: 190px;
+    left:0;
+    top:50px
+}
+
+.mobile-toggle i{
+    display: block;
+    padding: 0px 0px 0px 40px;
+}
+
+.mobile-toggle i:hover{
+
+}
+
+.contact-us{
+    position: absolute;
+    left:120px;
+    top:140px;
+    z-index: 1;
+    background-color: blue;
+}
+
+.logo-text h2{
+    font-size: 18px;
+    text-align: start;
+}
+
+
+
+.home-page {
+
+
+}
+
+
+}  */
+
